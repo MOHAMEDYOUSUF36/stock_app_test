@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Market Data Viewer</title>
+    
+    <!-- Include Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    
+    <style>
+        #sidebar {
+            max-height: 80vh;
+            overflow-y: auto;
+        }
+        .date-item {
+            cursor: pointer;
+            margin: 5px 0;
+            padding: 5px;
+            border-radius: 4px;
+            transition: background-color 0.2s;
+        }
+        .date-item:hover {
+            background-color: hwb(0 94% 6% / 0.575);
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Sidebar -->
+            <div id="sidebar" class="col-md-3 bg-lightblue  p-3 border-right">
+                <h4>Index Dates</h4>
+                <div id="dateList" class="list-group"></div>
+            </div>
+            
+            <!-- Content -->
+            <div id="content" class="col-md-9 p-3">
+                <h4>Index Data Chart</h4>
+                <div id="chartContainer" class="mt-4">
+                    <canvas id="indexChart"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Load Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Load Chart.js library -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
