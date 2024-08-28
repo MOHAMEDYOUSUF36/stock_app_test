@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stock Market Data Viewer</title>
-    
+
     <!-- Include Bootstrap CSS -->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    
+
     <style>
         #sidebar {
             max-height: 80vh;
@@ -21,15 +21,15 @@
             transition: background-color 0.2s;
         }
         .date-item:hover {
-            background-color: hwb(0 94% 6% / 0.575);
+            background-color: #f0f0f0;
         }
     </style>
 </head>
 <body>
     <div class="container-fluid">
         <div class="row">
-            <!-- Sidebar -->
-            <div id="sidebar" class="col-md-3 bg-lightblue  p-3 border-right">
+            <!-- Sidebar for all screen sizes -->
+            <div id="sidebar" class="col-md-3 bg-light p-3 border-right">
                 <h4>Index Dates</h4>
                 <div id="dateList" class="list-group"></div>
             </div>
