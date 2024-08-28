@@ -67,4 +67,6 @@ This project provides a simple webpage to view stock market data from an Excel f
 - **CORS Errors**: Ensure you are running a local web server. Opening `index.html` directly from the file system (file:///) will not work.
 - **404 Errors**: Check that all files (`index.html`, `script.js`, `data.csv`) are in the correct directory and the web server is pointing to the right folder.
 - **Chart Not Updating**: Verify that your CSV file is correctly formatted and that the date values match those expected by the script.
+- **Demo Link**:https://drive.google.com/file/d/11OrKIDOwushWbvWXj5Sce5HpgSsRSSBs/view?usp=drive_link
+  
 
